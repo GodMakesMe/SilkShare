@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            background-color: {% if dark_mode %}#333{% else %}#fff{% endif %};
+            color: {% if dark_mode %}#fff{% else %}#000{% endif %};
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my website!</h1>
+    <p>This is a simple example of a Django template.</p>
+</body>
+</html>
