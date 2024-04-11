@@ -90,25 +90,7 @@
        <li> </li>
      </ul>
    </div>
-   <div class="content">
-     <h1></h1>
-     <div class="beverage">
-       <h2>House Blend, $1.49</h2>
-       <p>A smooth, mild blend of coffees from Mexico, Bolivia and Guatemala.</p>
-     </div>
-     <div class="beverage">
-       <h2>Mocha Caffe Latte, $2.35</h2>
-       <p>Espresso, steamed milk and chocolate syrup.</p>
-     </div>
-     <div class="beverage">
-       <h2>Cappuccino, $1.89</h2>
-       <p>A mixture of espresso, steamed milk and milk foam.</p>
-     </div>
-     <div class="beverage">
-       <h2>Chai Tea, $1.85</h2>
-       <p>A spicy drink made with black tea, spices, milk and honey.</p>
-     </div>
-   </div>
+
    <div class="right-panel">
      <div class="white-section"></div>
      <div class="white-section"></div>
