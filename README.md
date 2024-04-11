@@ -12,4 +12,18 @@ Giving users an option of anonymity on the platforms while letting them build in
 Providing them with the latest fields and updates and skillsets.
 
 How to use-
-1)
+1) First change to the directory of the folder attached, which is Web_D and enter
+   source ll_env/bin/activate
+
+2) Then your virtual environment will be activated. Enter
+   python manage.py runserver 8001
+
+3) You get a local link like
+   http://127.0.0.1:8000/
+   Run it and see our website (that we were able to make yet)
+
+4) You can add /admin to it
+   Username- ll_admin
+   Password- just_code
+   and change entries
+   
