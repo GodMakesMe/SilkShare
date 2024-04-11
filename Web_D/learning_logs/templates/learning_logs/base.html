@@ -1,0 +1,141 @@
+<p>
+    <a href="{% url 'learning_logs:index' %}" margin-right="300px"> Learning Log </a>-
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
+
+</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} <!-- Prepare django to load static files -->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Starbuzz Coffee</title>
+ <style type="text/css">
+  body {
+    margin: 0; /* Reset default margin */
+    padding: 0;
+    background-color: #f0f0f0; /* Body background color */
+    font-family: sans-serif;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Use full viewport height */
+  }
+  .top-menu {
+    background-color: #4b5c72; /* Background color for top menu */
+    padding: 12px; /* Added padding for top menu */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items at the start and end */
+    border-bottom: 2px solid black; /* Add border at the bottom of the top menu */
+    box-sizing: border-box; /* Include border in width calculation */
+  }
+  .container {
+    display: flex; /* Use flexbox for layout */
+    flex: 1; /* Grow to fill remaining space */
+  }
+  .left-panel {
+    width: 30px; /* Width for left panel */
+    background-color: #D9D9D9; /* Background color for left panel */
+    padding: 10px; /* Added padding for left panel */
+  }
+  .right-panel {
+    width: 175px; /* Width for right panel */
+    background-color: #39434E; /* Background color for right panel */
+    padding: 10px; /* Added padding for right panel */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Align items at the start and end */
+  }
+  .white-section {
+    background-color: #ffffff; /* Background color for white sections */
+    height: 50px; /* Height of each white section */
+    margin-bottom: 10px; /* Spacing between white sections */
+  }
+  .small-box {
+    width: 50px; /* Width of the small box */
+    height: 50px; /* Height of the small box */
+    background-color: #ffcc00; /* Background color for the small box */
+    align-self: center; /* Center the small box horizontally */
+  }
+  .content {
+    flex: 1; /* Grow to fill remaining space */
+    padding: 10px; /* Added padding for content */
+  }
+  .section-title {
+    margin-bottom: 10px; /* Added margin bottom for section title */
+  }
+  .section-list {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    margin: 0;
+  }
+  .section-list li {
+    margin-bottom: 5px; /* Added margin bottom for list items */
+    cursor: pointer; /* Change cursor to pointer for better usability */
+  }
+  button{
+    margin-bottom:5px;
+  }
+ </style>
+</head>
+<body>
+
+ <div class="top-menu">
+   <!-- Top icons menu goes here -->
+
+
+ </div>
+ <div class="container">
+   <div class="left-panel">
+    <div class="section-title">
+    <button>Icon 1</button>
+    <button>Icon 2</button>
+    <button>Icon 3</button>
+    <button>Icon 4</button>
+    <button>Icon 5</button>
+    <button>Icon 6</button>
+    <button>Icon 7</button>
+        </div>
+     <ul class="section-list">
+       <li> </li>
+       <li> </li>
+       <li> </li>
+     </ul>
+     <div class="section-title"></div>
+     <ul class="section-list">
+       <li> </li>
+       <li> </li>
+       <li> </li>
+     </ul>
+   </div>
+   <div class="content">
+    {% block content %} {% endblock content %}
+     <!-- <h1></h1>
+     <div class="beverage">
+       <h2>House Blend, $1.49</h2>
+       <p>A smooth, mild blend of coffees from Mexico, Bolivia and Guatemala.</p>
+     </div>
+     <div class="beverage">
+       <h2>Mocha Caffe Latte, $2.35</h2>
+       <p>Espresso, steamed milk and chocolate syrup.</p>
+     </div>
+     <div class="beverage">
+       <h2>Cappuccino, $1.89</h2>
+       <p>A mixture of espresso, steamed milk and milk foam.</p>
+     </div>
+     <div class="beverage">
+       <h2>Chai Tea, $1.85</h2>
+       <p>A spicy drink made with black tea, spices, milk and honey.</p>
+     </div> -->
+   </div>
+   <div class="right-panel">
+     <div class="white-section"></div>
+     <div class="white-section"></div>
+     <div class="small-box"></div>
+     <div class="white-section"></div>
+     <div class="white-section"></div>
+   </div>
+ </div>
+</body>
+</html>
